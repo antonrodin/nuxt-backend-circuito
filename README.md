@@ -1,10 +1,16 @@
-# Autentificación con JWT y Sequelize
+# BackeEND para el proyecto de NUXT de Circuito de Nurburgring
+
+Esta basado en otro proyecto, del cual he eliminado todo lo relacionado con el CRUD del Post y he añadido modelo de Record, RecordController... Lo voy a ordenar por releases:
+
+* v1: Instalación, configuración, creación de Record model & Record Controller...
+
+## Autentificación con JWT y Sequelize
 
 Un ejemplo o boilerplate de autorización basada en JWT y Sequelize ORM de JavaScript con Roles (admin, user...ect) y políticas. Obviando lo de Express, Node, Sequelize CLI, MySQL (al ser ORM puedes utilizar Postgre, MariaDB, SQLite).
 
 ## Instalación
 
-Primero editar el archivo ___.env__ para tu base de datos. Despues: 
+Primero editar el archivo __.env__ para tu base de datos. Despues: 
 
 ```bash
 # Instalar dependencias
@@ -17,6 +23,8 @@ npx sequelize-cli db:migrate
 # Abajo explicación
 npx sequelize-cli db:seed:all
 ```
+
+Despues de migrar todo, en la raiz del proyecto puedes encontrar el archivo __records.sql.gz__, que es basicamente en dump de la tabla records. Tienes que importarlo con SQLPro, Table Plus o como puedas...
 
 ## Mejoras posibles o problemas conocidos
 
